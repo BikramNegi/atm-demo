@@ -70,14 +70,14 @@ const TransactionHistory = () => {
         <button
           className="bg-gray-800 text-white py-1 px-2 text-sm rounded-md mr-2 disabled:opacity-25"
           onClick={handlePreviousPage}
-          disabled={currentPage === 1}
+          disabled={currentPage === 1 || !transactionList}
         >
           Previous
         </button>
         <button
           className="bg-gray-800 text-white py-1 px-2 text-sm rounded-md disabled:opacity-25"
           onClick={handleNextPage}
-          disabled={currentPage === totalPages}
+          disabled={currentPage === totalPages || !transactionList}
         >
           Next
         </button>
