@@ -1,0 +1,35 @@
+.btn {
+    @apply bg-blue-500 text-white px-4 py-2 rounded-md mt-2 cursor-pointer;
+  }
+  .animate-fillGreen{
+    animation : fillAnimationGreen 3s;
+  }
+
+  .animate-fillRed{
+    animation : fillAnimationRed 3s;
+  }
+  
+  @keyframes fillAnimationGreen {
+    0% {
+      background-color: transparent;
+    }
+    50% {
+      background-color: green; /* Change to the desired color for deposit */
+    }
+    100% {
+      background-color: transparent;
+    }
+  }
+  
+  @keyframes fillAnimationRed {
+    0% {
+      background-color: transparent;
+    }
+    50% {
+      background-color: red; /* Change to the desired color for withdrawal */
+    }
+    100% {
+      background-color: transparent;
+    }
+  }
+  
